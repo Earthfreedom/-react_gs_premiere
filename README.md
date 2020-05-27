@@ -1,3 +1,19 @@
+## Reactで航空機の位置情報を3D地球儀の上にピン立てるアプリ的な奴（雑）
+
+こっちはフロント側です。<br />
+CORS回避のためNode.jsで航空機情報をAPIから取ってくるようにしてます。<br />
+grobeをクリックすると使うとしたけどなんか違うってなった地球儀がいじれて<br />
+ceciumをクリックするとNode.jsのサーバーへPOSTリクエストを行い<br />
+Node.jsから航空機情報APIへ情報を取りに行き帰ってきたresultを戻してから<br />
+フロント側の地球儀の上の座標に表示させるようにしてます。<br />
+クリックしながらくるくる地球儀を回せます。<br />
+ピンをクリックすると航空機情報を少しだけ見れます。<br />
+
+
+
+
+以下Create React Appで自動生成される奴<br />
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
