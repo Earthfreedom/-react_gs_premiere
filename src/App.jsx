@@ -53,20 +53,20 @@ const getDataFromFlightAPI = async howmany => {
 
 
 const App = () => {
-  const languages = ['React', 'Vue', 'Angular'];
+  // const languages = ['React', 'Vue', 'Angular'];
   return (
     <BrowserRouter>
       <div>
         <h1>Reactで航空機の位置情報を3D地球儀の上にピン立てるアプリ</h1>
         <ul>
-          <li><Link to='/'>React</Link></li>
+          {/* <li><Link to='/'>React</Link></li>
           <li><Link to='/vue'>Vue</Link></li>
-          <li><Link to='/angular'>Angular</Link></li>
+          <li><Link to='/angular'>Angular</Link></li> */}
           <li><Link to='/grobe'>grobe（使おうとしたけどズームすると荒いので嫌いだった）</Link></li>
-          <li><Link to='/cecium'>cecium（ズームしても綺麗好き）</Link></li>
+          <li><Link to='/'>cecium（ズームしても綺麗だから好き）</Link></li>
         </ul>
         <hr />
-        <Route
+        {/* <Route
           exact path='/'
           render={props =>
             <Booklist
@@ -92,7 +92,7 @@ const App = () => {
               getData={keyword => getDataFromAPI(keyword)}
             />
           }
-        />
+        /> */}
         <Route
           exact path='/grobe'
           render={props =>
@@ -100,7 +100,7 @@ const App = () => {
           }
         />
         <Route
-          exact path='/cecium'
+          exact path='/'
           render={props =>
             <CeciumFlight
               howmany={15}
