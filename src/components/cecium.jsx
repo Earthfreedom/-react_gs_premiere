@@ -11,6 +11,7 @@ const CeciumFlight = props => {
     }, [props])
     return (
         <div key="flightViewer">
+            <p>地球儀の上でクリックしながらぐりぐりすると動く</p>
             <Viewer >
                 {
                     flightData === null
