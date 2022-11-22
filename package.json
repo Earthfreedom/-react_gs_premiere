@@ -18,7 +18,7 @@
     "react-globe": "^4.0.0",
     "react-hot-loader": "^4.12.21",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "resium": "^1.11.0",
     "three": "^0.116.1"
   },
